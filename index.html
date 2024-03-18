@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/styles/style.css">
+
+    <title>Alura Books</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__image"></span>
+            </label>
+            <ul class="lista__menu">
+                <li class="lista__menu__title"> Categoria
+
+                </li>
+                <li class="lista__menu__item"> <a href="#" class="lista__menu__link">Programação</a>
+                </li>
+                <li class="lista__menu__item"> <a href="#" class="lista__menu__link">Front-End</a>
+                </li>
+                <li class="lista__menu__item"> <a href="#" class="lista__menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista__menu__item"> <a href="#" class="lista__menu__link">Buiness</a>
+                </li>
+                <li class="lista__menu__item"> <a href="#" class="lista__menu__link">Deisgn & UX</a>
+                </li>
+
+            </ul>
+            <img src="src/assets/Logo.svg" class="container__image" alt="Logo da Alurabooks">
+        </div>
+
+        <div class="container">
+            <a href="#"><img src="src/assets/Favoritos.svg" alt="Favoritos" class="container__image"> </a>
+            <a href="#"><img src="src/assets/Compras.svg" alt="Minha Sacola" class="container__image"> </a>
+            <a href="#"><img src="src/assets/Usuario.svg" alt="Meu perfil" class="container__image"> </a>
+        </div>
+
+    </header>
+
+    <section class="banner">
+
+        <h1 class="banner__title">já sabe por onde começar?</h1>
+        <p class="banner__text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
+
+    </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel__title">Novos Lançamentos</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+
+            <div class="swiper-pagination"></div>
+
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="src/assets/ApacheKafka.svg"
+                        alt="Livro sobre  Apache Kafka e Spring Boot da AluraBooks"></div>
+                <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks">
+                </div>
+                <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks">
+                </div>
+                <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks"> </div>
+            </div>
+            <!-- If we need pagination -->
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="card">
+            <!-- 1 linha -->
+            <div class="card__descricao">
+                <!-- 1 coluna -->
+                <div class="descricao">
+                    <h3 class="descricao__title">
+                        Talvez voçê se interesse por...
+                    </h3>
+
+                    <h2 class="descricao__title-livro">
+                        Angular 11 e Firebase
+                    </h2>
+
+                    <p class="descricao__text">
+                        Construindo uma aplicação integrada com a plataforma do Google.
+                    </p>
+                </div>
+                <!-- 2 coluna -->
+                <img src="./src/assets/Angular.svg" class="descricao__image" alt="imagem angular">
+            </div>
+
+            <!--2 linha-->
+            <div class="card__buttons">
+                <!--1 coluna-->
+                 <ul class="buttons">
+                    <li class="buttons__item"><img src="./src/assets/Favoritos.svg" alt="Favoritos livro"></li>
+                    <li class="buttons__item"><img src="./src/assets/Compras.svg" alt="adiconar ao carrinho de compras"></li>
+
+                 </ul>
+                 <!--2 coluna-->
+                 <a href="#" class="button__ancora">saiba mais</a>
+            </div>
+        </div>
+
+ <!--sessao de mais vendidos e autora do mes-->
+    </section>
+
+    <section class="carrosel">
+        <h2 class="carrosel__title">Mais Vendidos</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+
+            <div class="swiper-pagination"></div>
+
+
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="src/assets/ApacheKafka.svg"
+                        alt="Livro sobre  Apache Kafka e Spring Boot da AluraBooks"></div>
+                <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks">
+                </div>
+                <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks">
+                </div>
+                <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks"> </div>
+            </div>
+            <!-- If we need pagination -->
+
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="card">
+            <!-- 1 linha -->
+            <div class="card__descricao">
+                <!-- 1 coluna -->
+                <div class="descricao">
+
+                    <img src="./src/assets/Estrelinhas.svg" class="estrelinhas" alt="Estrelinhas">
+                    <h3 class="descricao__title">
+                        Autora do Mês
+                    </h3>
+
+                    <h2 class="descricao__title-livro">
+                        Juliana Agarikov
+                    </h2>
+
+                    <p class="descricao__text">
+                        Analista de sistemas e escritora, Juliana é especialista em Front-End. 
+                    </p>
+                </div>
+                <!-- 2 coluna -->
+                <img src="./src/assets/Escritora.svg" class="descricao__image" alt="imagem angular">
+            </div>
+
+            <!--2 linha-->
+            <div class="card__buttons">
+                <!--1 coluna-->
+                 <ul class="buttons">
+                    <li class="buttons__item"><img src="./src/assets/Favoritos.svg" alt="Favoritos livro"></li>
+                    <li class="buttons__item"><img src="./src/assets/Compras.svg" alt="adiconar ao carrinho de compras"></li>
+
+                 </ul>
+                 <!--2 coluna-->
+                 <a href="#" class="button__ancora">saiba mais</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="topicos">
+
+        <h2 class="topicos__title">topicos visitados recentemente</h2>
+        <ul class="topicos__lista">
+
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Android</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Marketing Digital</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Agile</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Startups</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Html CSS</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Python</a>
+            </li>
+            <li class="topicos__item">
+                <!--orientação a objetos-->
+                <a href="#" class="topicos__link">OO</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Java</a>
+            </li>
+
+
+        </ul>
+
+
+    </section>
+
+    <section class="contato">
+
+        <h2 class="contato__title">Fique por dentro das novidades!</h2>
+        <p class="contato__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+
+
+
+    </section>
+<!--hr server para fazer a quebra de linha-->
+    <hr/>
+
+    <footer class="rodape">
+        <h2 class="rodape__title">Grupo Alura</h2>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+
+            spaceBetween: 10,
+            slidesPerView: 3,
+
+            pagination: {
+
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+
+        });
+    </script>
+
+</body>
+
+</html>
