@@ -69,3 +69,23 @@
 
     display: none;
 }
+
+.container__title{
+
+    display: none;
+}
+
+@media  screen and (min-width: 1024px) {
+    .container__title, .container__title--negrito{
+
+        font-family: var(--font-secundaria);
+        font-size: 30px;
+    }
+    .container__title{
+        font-weight: 400;
+        display: block;
+    }
+    .container__title--negrito{
+        font-weight: 700;
+    }
+}
