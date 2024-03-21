@@ -102,7 +102,7 @@
     text-decoration: none;
 }
 
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
 
     .carrosel__title{
 
@@ -118,5 +118,59 @@
 
         width: 60%;
     }
-    
+
+    .swiper-button-next, .swiper-button-prev{
+
+        display: block;
+        top: 60%;
+    }
+
+    .card{
+
+        width: 40%;
+        margin: 2em auto;
+    }
+
+  
+}
+
+@media screen and (min-width: 1728px){
+
+    .carrosel__container{
+
+        display: flex;
+
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination{
+
+        margin: 1em 0;
+    }
+    .swiper{
+
+        width: 50%;
+    }
+
+    .descricao__title{
+
+        font-size: 32px;
+    }
+
+    .descricao__text{
+
+        font-size: 16px;
+    }
+
+    .descricao{
+
+        margin-right: 2em;
+    }
+
+    .card{
+
+        width: 60%;
+        margin-left: 3em;
+    }
 }

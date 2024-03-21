@@ -8,6 +8,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/styles/style.css">
 
@@ -19,7 +22,7 @@
 
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="rotulo">
                 <span class="cabecalho__menu-hamburguer container__image"></span>
             </label>
             <ul class="lista__menu">
@@ -39,12 +42,52 @@
 
             </ul>
             <img src="src/assets/Logo.svg" class="container__image" alt="Logo da Alurabooks">
+
+            <h1 class="container__title"><b class="container__title--negrito">Alura</b>Books </h1>
         </div>
 
+        <ul class="options">
+            <input type="checkbox" id="options-menu" class="options__button">
+            <label for="options-menu" class="options__rotulo">
+                <li class="options__item">Categorias</li>
+            </label>
+
+            <ul class="lista__menu">
+
+                </li>
+                <li class="lista__menu__item"> <a href="#" class="lista__menu__link">Programação</a>
+                </li>
+                <li class="lista__menu__item"> <a href="#" class="lista__menu__link">Front-End</a>
+                </li>
+                <li class="lista__menu__item"> <a href="#" class="lista__menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista__menu__item"> <a href="#" class="lista__menu__link">Buiness</a>
+                </li>
+                <li class="lista__menu__item"> <a href="#" class="lista__menu__link">Deisgn & UX</a>
+                </li>
+
+            </ul>
+
+            <li class="options__item"><a href="#" class="options__link">Favoritos</a></li>
+            <li class="options__item"><a href="#" class="options__link">Minha Estante</a></li>
+
+
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="src/assets/Favoritos.svg" alt="Favoritos" class="container__image"> </a>
-            <a href="#"><img src="src/assets/Compras.svg" alt="Minha Sacola" class="container__image"> </a>
-            <a href="#"><img src="src/assets/Usuario.svg" alt="Meu perfil" class="container__image"> </a>
+
+            <a href="#"><img src="src/assets/Favoritos.svg" alt="Favoritos"
+                    class="container__image container__imagem--transparente"> </a>
+            <a href="#" class="container__link">
+                <img src="src/assets/Compras.svg" alt="Minha Sacola" class="container__image"> 
+                <p class="container__text">Minha Sacola</p>
+            </a>
+
+            <a href="#" class="container__link">
+                <img src="src/assets/Usuario.svg" alt="Meu perfil" class="container__image"> 
+                <p class="container__text">Meu Perfil</p>
+            </a>
+
         </div>
 
     </header>
@@ -61,6 +104,7 @@
         <h2 class="carrosel__title">Novos Lançamentos</h2>
 
         <!-- Slider main container -->
+        <div class="carrosel__container">
         <div class="swiper">
             <!-- Additional required wrapper -->
 
@@ -75,7 +119,8 @@
                 </div>
                 <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks">
                 </div>
-                <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks"> </div>
+                <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks">
+                </div>
             </div>
             <!-- If we need pagination -->
 
@@ -110,23 +155,27 @@
             <!--2 linha-->
             <div class="card__buttons">
                 <!--1 coluna-->
-                 <ul class="buttons">
+                <ul class="buttons">
                     <li class="buttons__item"><img src="./src/assets/Favoritos.svg" alt="Favoritos livro"></li>
-                    <li class="buttons__item"><img src="./src/assets/Compras.svg" alt="adiconar ao carrinho de compras"></li>
+                    <li class="buttons__item"><img src="./src/assets/Compras.svg" alt="adiconar ao carrinho de compras">
+                    </li>
 
-                 </ul>
-                 <!--2 coluna-->
-                 <a href="#" class="button__ancora">saiba mais</a>
+                </ul>
+                <!--2 coluna-->
+                <a href="#" class="button__ancora">saiba mais</a>
             </div>
         </div>
+    </div>
 
- <!--sessao de mais vendidos e autora do mes-->
+        <!--sessao de mais vendidos e autora do mes-->
     </section>
 
     <section class="carrosel">
+
         <h2 class="carrosel__title">Mais Vendidos</h2>
 
         <!-- Slider main container -->
+        <div class="carrosel__container">
         <div class="swiper">
             <!-- Additional required wrapper -->
 
@@ -141,7 +190,8 @@
                 </div>
                 <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks">
                 </div>
-                <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks"> </div>
+                <div class="swiper-slide"><img src="src/assets/Javascript.svg" alt="Livro sobre  Javascript AluraBooks">
+                </div>
             </div>
             <!-- If we need pagination -->
 
@@ -168,7 +218,7 @@
                     </h2>
 
                     <p class="descricao__text">
-                        Analista de sistemas e escritora, Juliana é especialista em Front-End. 
+                        Analista de sistemas e escritora, Juliana é especialista em Front-End.
                     </p>
                 </div>
                 <!-- 2 coluna -->
@@ -178,16 +228,17 @@
             <!--2 linha-->
             <div class="card__buttons">
                 <!--1 coluna-->
-                 <ul class="buttons">
+                <ul class="buttons">
                     <li class="buttons__item"><img src="./src/assets/Favoritos.svg" alt="Favoritos livro"></li>
-                    <li class="buttons__item"><img src="./src/assets/Compras.svg" alt="adiconar ao carrinho de compras"></li>
+                    <li class="buttons__item"><img src="./src/assets/Compras.svg" alt="adiconar ao carrinho de compras">
+                    </li>
 
-                 </ul>
-                 <!--2 coluna-->
-                 <a href="#" class="button__ancora">saiba mais</a>
+                </ul>
+                <!--2 coluna-->
+                <a href="#" class="button__ancora">saiba mais</a>
             </div>
         </div>
-
+    </div>
 
     </section>
 
@@ -229,19 +280,113 @@
     </section>
 
     <section class="contato">
-
-        <h2 class="contato__title">Fique por dentro das novidades!</h2>
-        <p class="contato__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato__descricao">
+            <h2 class="contato__title">Fique por dentro das novidades!</h2>
+            <p class="contato__text">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
 
 
 
     </section>
-<!--hr server para fazer a quebra de linha-->
-    <hr/>
+    <!--hr server para fazer a quebra de linha-->
+    <hr />
 
     <footer class="rodape">
         <h2 class="rodape__title">Grupo Alura</h2>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__title">Educação</li>
+            <li class="lista-rodape__item">
+                <img src="./src/assets/CasaDoCodigo.svg" alt="logo da casa do codigo">
+                <a href="#" class="lista-rodape__link">Casa Do Codigo</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/Caelum.svg" alt="logo da Caelum">
+                <a href="#" class="lista-rodape__link">Caelum</a>
+            </li>
+
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__title">Educação online</li>
+            <li class="lista-rodape__item">
+                <img src="./src/assets/Alura.svg" alt="logo da Alura">
+                <a href="#" class="lista-rodape__link">Alura</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/AluraEmpresas.svg" alt="logo da Alura Empresas">
+                <a href="#" class="lista-rodape__link">Alura Empresas</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/AluraLATAM.svg" alt="logo da Alura LATAM">
+                <a href="#" class="lista-rodape__link">Alura LATAM</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/AluraStart.svg" alt="logo da Alura Start">
+                <a href="#" class="lista-rodape__link">Alura Start</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/MusicDot.svg" alt="logo da MusicDot">
+                <a href="#" class="lista-rodape__link">Music Dot</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/AluraLingua.svg" alt="logo da AluraLingua">
+                <a href="#" class="lista-rodape__link">Alura Lingua</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/PM3.svg" alt="logo da PM3">
+                <a href="#" class="lista-rodape__link">PM3</a>
+            </li>
+
+
+        </ul>
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__title">Comunidade</li>
+            <li class="lista-rodape__item">
+                <img src="./src/assets/HipstersTech.svg" alt="logo da HipstersTech">
+                <a href="#" class="lista-rodape__link">Hipsters Tech</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/ScubaDev.svg" alt="logo da ScubaDev">
+                <a href="#" class="lista-rodape__link">Scuba Dev</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/LayersTech.svg" alt="logo da LayersTech">
+                <a href="#" class="lista-rodape__link">Layers Tech</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/LikeABoss.svg" alt="logo da LikeABoss">
+                <a href="#" class="lista-rodape__link">Like A Boss</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/CarreiraSemFronteira.svg" alt="logo da CarreiraSemFronteira">
+                <a href="#" class="lista-rodape__link">Carreira Sem Fronteira</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/HipstersJobs.svg" alt="logo da HipstersJobs">
+                <a href="#" class="lista-rodape__link">Hipsters Jobs</a>
+            </li>
+
+            <li class="lista-rodape__item">
+                <img src="./src/assets/GUJ.svg" alt="logo da GUJ">
+                <a href="#" class="lista-rodape__link">GUJ</a>
+            </li>
+        </ul>
+
 
     </footer>
 
